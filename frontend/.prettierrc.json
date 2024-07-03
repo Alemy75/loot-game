@@ -1,0 +1,13 @@
+{
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+  "proseWrap": "always",
+  "quoteProps": "as-needed",
+  "htmlWhitespaceSensitivity": "css",
+  "editorconfig": true
+}

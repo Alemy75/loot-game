@@ -1,0 +1,77 @@
+// Margin and padding helpers
+@for $i from 1 through 16 {
+  .pt-#{$i} {
+    padding-top: $i * 0.25rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * 0.25rem;
+  }
+  .pl-#{$i} {
+    padding-left: $i * 0.25rem;
+  }
+  .pr-#{$i} {
+    padding-right: $i * 0.25rem;
+  }
+  .px-#{$i} {
+    padding: 0 $i * 0.25rem;
+  }
+  .py-#{$i} {
+    padding: $i * 0.25rem 0;
+  }
+  .mt-#{$i} {
+    margin-top: $i * 0.25rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * 0.25rem;
+  }
+  .ml-#{$i} {
+    margin-left: $i * 0.25rem;
+  }
+  .mr-#{$i} {
+    margin-right: $i * 0.25rem;
+  }
+  .mx-#{$i} {
+    margin: 0 $i * 0.25rem;
+  }
+  .my-#{$i} {
+    margin: $i * 0.25rem 0;
+  }
+}
+
+// Color helpers
+$theme-colors: (
+  primary: var(--g-theme-primary),
+  secondary: var(--g-theme-secondary),
+  surface: var(--g-theme-surface),
+  background: var(--g-theme-background),
+  error: var(--g-theme-error),
+  warning: var(--g-theme-warning),
+  success: var(--g-theme-success),
+  on-primary: var(--g-theme-on-primary),
+  on-secondary: var(--g-theme-on-secondary),
+  on-surface: var(--g-theme-on-surface),
+  on-background: var(--g-theme-on-background),
+  on-error: var(--g-theme-on-error),
+  on-warning: var(--g-theme-on-warning),
+  on-success: var(--g-theme-on-success)
+);
+
+@each $color, $value in $theme-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+.container {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1000px) {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+  }
+}
