@@ -3,6 +3,7 @@ import { onBeforeMount } from 'vue'
 import { cssVariables } from '@/shared/theme'
 
 import headerWidget from '../widgets/header/header.vue'
+import navigationWidget from '../widgets/navigation/navigation.vue'
 
 const appStyle = {
   ...cssVariables
@@ -26,6 +27,8 @@ onBeforeMount(() => {
     <div class="container">
       <router-view />
     </div>
+
+    <navigation-widget />
   </div>
 </template>
 
