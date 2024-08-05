@@ -1,0 +1,1 @@
+export { GDialog } from './dialog'

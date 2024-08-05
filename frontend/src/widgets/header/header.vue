@@ -18,7 +18,7 @@ import { Coins } from 'lucide-vue-next'
 <style lang="scss" scoped>
 .g-header {
   height: 56px;
-  background-color: var(--g-theme-surface);
+  // background-color: var(--g-theme-surface);
   color: var(--g-theme-on-surface);
 
   .b-content {
