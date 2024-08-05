@@ -1,15 +1,15 @@
 <script setup>
-import gIcon from '@/shared/ui/icons'
+import { Coins } from 'lucide-vue-next'
 </script>
 
 <template>
   <div class="g-header">
     <div class="b-content container">
-      Loot Game
+      Lud ka Game
 
       <span class="g-coins-chip">
         <span>100</span>
-        <g-icon class="text-primary" name="coins" />
+        <Coins class="e-coins" :stroke-width="1.5" />
       </span>
     </div>
   </div>
@@ -30,12 +30,17 @@ import gIcon from '@/shared/ui/icons'
 
   .g-coins-chip {
     color: var(--g-theme-on-surface);
-    padding: 4px;
+    padding: 4px 8px;
     display: flex;
     align-items: center;
     gap: 4px;
     border: 1px solid var(--g-theme-primary);
     border-radius: 4px;
+    line-height: 1;
+
+    .e-coins {
+      color: var(--g-theme-primary);
+    }
   }
 }
 </style>

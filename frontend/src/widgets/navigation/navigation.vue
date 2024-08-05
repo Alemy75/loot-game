@@ -1,15 +1,16 @@
 <script setup>
-import gIcon from '@/shared/ui/icons'
+import { Package, Map, Pickaxe } from 'lucide-vue-next'
 </script>
 
 <template>
   <div class="g-navigation">
-    <button><g-icon name="diamond" />Looting</button>
+    <button><Pickaxe :stroke-width="1.5" />Farming</button>
+    <button><Package :stroke-width="1.5" />Cases</button>
     <button>
-      <g-icon name="diamond" />
-      <span> Illumi</span>
+      <Map :stroke-width="1.5" />
+      <span>Event</span>
 
-      <span class="premium">VIP</span>
+      <span class="premium">Weekly</span>
     </button>
   </div>
 </template>
@@ -22,19 +23,25 @@ import gIcon from '@/shared/ui/icons'
   max-width: calc(100% - 2rem);
   min-width: 288px;
   transform: translateX(-50%);
-  background-color: var(--g-theme-surface);
-  padding: 1rem 1rem;
+  padding: 0;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  :first-child {
+    border-radius: 0.5rem 0 0 0;
+  }
+
+  :last-child {
+    border-radius: 0 0.5rem 0 0;
+  }
 
   button {
     all: unset;
-    background-color: var(--g-theme-background);
+    background-color: var(--g-theme-surface);
     color: var(--g-theme-primary);
-    padding: 1rem 1rem;
-    border-radius: 0.5rem;
+    padding: 1rem 0;
+
     width: 100%;
     text-align: center;
     cursor: pointer;
@@ -42,9 +49,10 @@ import gIcon from '@/shared/ui/icons'
 
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: 4px;
 
+    font-size: 0.8rem;
     position: relative;
 
     .premium {
