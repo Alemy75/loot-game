@@ -10,6 +10,7 @@ onMounted(() => {
 
 <template>
   <main class="mt-8">
+    <div>Hello</div>
     <div>
       {{ JSON.stringify(userData) }}
     </div>
