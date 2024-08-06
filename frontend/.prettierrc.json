@@ -9,5 +9,6 @@
   "proseWrap": "always",
   "quoteProps": "as-needed",
   "htmlWhitespaceSensitivity": "css",
-  "editorconfig": true
+  "editorconfig": true,
+  "printWidth": 70
 }

@@ -32,7 +32,9 @@ onMounted(() => {
 
   <g-dialog v-model="isDialogVisible">
     <template v-if="user">
-      <div v-for="item in Object.keys(user)">{{ item }}: {{ user[item] }}</div>
+      <div v-for="item in Object.keys(user)">
+        {{ item }}: {{ user[item] }}
+      </div>
     </template>
   </g-dialog>
 </template>
