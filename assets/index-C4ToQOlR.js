@@ -1,1 +1,0 @@
-import{r as t,o as s,a as n,c as o,b as a,t as l}from"./index-CGElBcih.js";const c={class:"mt-8"},r=a("div",null,"Hello",-1),i={__name:"home",setup(_){const e=t(null);return s(()=>{e.value=window.Telegram.initDataUnsafe}),(u,m)=>(n(),o("main",c,[r,a("div",null,l(JSON.stringify(e.value)),1)]))}},f=i;export{f as default};
