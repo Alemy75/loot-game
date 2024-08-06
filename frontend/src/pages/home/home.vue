@@ -4,14 +4,14 @@ import { onMounted, ref } from 'vue'
 const userData = ref(null)
 
 onMounted(() => {
-  userData.value = window.Telegram.initDataUnsafe.user
+  userData.value = window.Telegram.initDataUnsafe
 })
 </script>
 
 <template>
   <main class="mt-8">
-    <div v-if="userData">
-      Hello, {{ userData.firstName }} {{ userData.lastName }}!
+    <div>
+      {{ JSON.stringify(userData) }}
     </div>
   </main>
 </template>
