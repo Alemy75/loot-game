@@ -10,6 +10,7 @@
     "pages": "gh-pages -d dist"
   },
   "dependencies": {
+    "@vueuse/core": "^10.11.0",
     "eslint-plugin-fsd-import-linter": "^0.1.16",
     "lucide-vue-next": "^0.424.0",
     "sass": "^1.77.6",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
     "eslint": "^9.8.0",
+    "eslint-plugin-vue": "^9.27.0",
     "gh-pages": "^6.1.1",
     "prettier": "^3.3.2",
     "vite": "^5.3.1"

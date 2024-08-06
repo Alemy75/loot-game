@@ -1,6 +1,6 @@
 {
   "extends": "standard",
-  "plugins": ["fsd-import-linter"],
+  "plugins": ["fsd-import-linter", "eslint-plugin-vue"],
   "rules": {
     "quotes": [
       "error",

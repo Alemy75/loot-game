@@ -28,6 +28,7 @@ const computedStyle = computed(() => ({
 
 const computedContentClass = computed(() => ({
   dialog: true,
+  container: true,
   'm-dialog-hidden': !isVisible.value
 }))
 
