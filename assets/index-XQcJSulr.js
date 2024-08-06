@@ -1,0 +1,1 @@
+import{r as e,o as t,a as s,c as n,b as o,t as r}from"./index-BmO7HanN.js";const c={class:"mt-8"},i={__name:"home",setup(l){const a=e(null);return t(()=>{a.value=window.Telegram.initDataUnsafe}),(_,m)=>(s(),n("main",c,[o("div",null,r(JSON.stringify(a.value)),1)]))}},f=i;export{f as default};
