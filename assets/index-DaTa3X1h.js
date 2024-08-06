@@ -1,0 +1,1 @@
+import{r as o,o as n,a,c as t,t as s,b as r}from"./index-BN7inYI7.js";const c={class:"mt-8"},l={key:0},m={__name:"home",setup(_){const e=o(null);return n(()=>{e.value=window.Telegram.initDataUnsafe.user}),(i,u)=>(a(),t("main",c,[e.value?(a(),t("div",l," Hello, "+s(e.value.firstName)+" "+s(e.value.lastName)+"! ",1)):r("",!0)]))}},f=m;export{f as default};
