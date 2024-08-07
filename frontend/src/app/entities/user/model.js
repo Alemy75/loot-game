@@ -1,24 +1,11 @@
 import { createGlobalState } from '@vueuse/core'
-import { onMounted, onBeforeMount, ref } from 'vue'
+import { computed } from 'vue'
+import { useWebApp } from 'vue-tg'
 
 export const useUserStore = createGlobalState(() => {
-  const user = ref(null)
+  const { initDataUnsafe: webAppData } = useWebApp()
 
-  onBeforeMount(() => {
-    if (!window.Telegram) {
-      throw Error('[userStore]: no Telegram API detected')
-    }
-
-    window.Telegram.WebApp.isVerticalSwipesEnabled = false
-  })
-
-  onMounted(() => {
-    if (!window.Telegram) {
-      throw Error('[userStore]: no Telegram API detected')
-    }
-
-    user.value = window.Telegram.WebApp.initDataUnsafe.user
-  })
+  const user = computed(() => webAppData.user)
 
   return { user }
 })
